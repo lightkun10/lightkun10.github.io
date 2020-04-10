@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Webpage</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://kit.fontawesome.com/a2ef3fee62.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--  ======================= Start Header Area ============================== -->
+
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a> -->
+                <!-- <a class="navbar-brand" href="#" id="main-font">PANDU PAGE</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="interest.html">interest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">contact <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--  ======================= End Header Area ============================== -->
+
+
+    <!--  ======================= Start Main Area ================================ -->
+    <main class="site-main">
+
+        <!--  ======================= Start Banner Area =======================  -->
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">hello, world!</h3>
+                        <h1 class="title-text text-uppercase">I am <span id="personal-name">Pandu</span></h1>
+                        <h4 class="title-text text-uppercase"><span class="aspiring">Aspiring</span> Software Engineer
+                        </h4>
+                    </div>
+                    <!-- <div class="site-buttons">
+                        <div class="d-flex flex-row flex-wrap">
+                            <button type="button" class="btn button primary-button mr-4 text-uppercase">hire
+                                me</button>
+                            <button type="button" class="btn button secondary-button text-uppercase">Get cv</button>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="/static/panda.jpg" alt="banner-img" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-12 col-lg-12 banner-links">
+                        <p style="display: inline;">
+                            Find me on </p>
+                        <ul id="social-links">
+                            <!--  github, twitter, facebook, instagram -->
+                            <li><a href="https://github.com/lightkun10" target="_blank"><i
+                                        class="fa fa-github fa-2x"></i></a></li>
+                            <li><a href="https://twitter.com/PanduJRZ" target="_blank"><i
+                                        class="fa fa-twitter fa-2x"></i></a></li>
+                            <li><a href="https://web.facebook.com/PanduJRzk/" target="_blank"><i
+                                        class="fa fa-facebook fa-2x"></i></a>
+                            <li><a href="https://www.instagram.com/pnada.as12/" target="_blank"><i
+                                        class="fa fa-instagram fa-2x"></i></a>
+                            </li>
+                            <li> <a href=""></a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  ======================= End Banner Area =======================  -->
+
+
+    </main>
+    <!--  ======================= End Main Area ================================ -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+    <script>
+        function blink() {
+            let aspire = document.querySelector('.aspiring');
+
+            if (aspire.style.visibility === 'hidden') {
+                aspire.style.visibility = "visible";
+            } else {
+                aspire.style.visibility = "hidden";
+            }
+        }
+
+        window.setInterval(blink, 1000);
+    </script>
+</body>
+
+</html>
